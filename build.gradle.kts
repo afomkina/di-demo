@@ -14,6 +14,13 @@ repositories {
 dependencies {
     implementation("com.h2database:h2:2.2.224")
     implementation("com.zaxxer:HikariCP:7.0.2")
+
+    testImplementation(platform("org.junit:junit-bom:5.13.4"))
+    testImplementation("org.assertj:assertj-core:3.27.0")
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.junit-pioneer:junit-pioneer:2.3.0")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 java {
